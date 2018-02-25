@@ -22,8 +22,9 @@ Vorgehen
 6. Entweder mittels 'Un-Subdivide' die einzelnen Faces zu Punkten zusammenführen oder per 'Remove Doubles' (Merge Distance z.B. 0.1 zunehmend) benachbarte Punkte zusammenführen
 (7. Nach 'Un-Subdivide': Mittels 'fill' (Taste f) die nun alleinstehenden Punkte wieder mit ihren jeweiligen Nachbarpunkten zu einer Fläche verbinden)
 8. Die Schritte 4 bis 7 nach Bedarf wiederholen (zum Schluss sollte der Support auf der Bodenplatte aufsetzen)
-(9. mithilfe des 'Subdiv-Surface-Modifiers' (Einstellung: simple) für etwas mehr Verstrebungen im Mesh sorgen)
-10. die Einzelteile der bis hierhin erstellten Stützstruktur verschmelzen/ bereinigen (z.B. per 'seperate loose parts' und dann mittels Boolean 'Union')
-11. mittels des 'Wireframe-Modifiers' nur noch die Kanten des Mesh (also das Gerüst) verwenden
-12. zum Schluss nochmal mit dem 'Subdiv-Surface-Modifier' (Einstellung: Catmull-Clark) verrunden, damit es sich besser 3D-Drucken lässt
-13. Export (z.B.: als STL-Datei) über die '3D-Print Toolbox' oder die Blendereigene Exportfunktion - am besten für Objekt und Support getrennt
+(9. mithilfe des 'Subdiv-Surface-Modifiers' (Einstellung: simple) für etwas mehr Verstrebungen am Meshrand sorgen)
+(10. die Einzelteile der bis hierhin erstellten Stützstruktur verschmelzen/ bereinigen (z.B. per 'seperate loose parts' und dann mittels Boolean 'Union'))
+11. Mittels "Decimate-Modifier" (Einstellung: Triangulate und Ratio) das Mesh vereinfachen, in Dreiecke umwandeln und etwas bereinigen.
+12. mittels des 'Wireframe-Modifiers' nur noch die Kanten des Mesh (also das Gerüst) verwenden
+13. zum Schluss nochmal mit dem 'Subdiv-Surface-Modifier' (Einstellung: Catmull-Clark) verrunden, damit es sich besser 3D-Drucken lässt
+14. Export (z.B.: als STL-Datei) über die '3D-Print Toolbox' oder die blendereigene Exportfunktion - am besten für Objekt und Support getrennt
